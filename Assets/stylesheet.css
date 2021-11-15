@@ -1,0 +1,63 @@
+
+header h1 {
+    background-color: rgb(154, 220, 221);
+    padding: 5px 5px 5px 75px;
+    margin: 12px 12px 12px 5px;
+}
+header h1 a {
+    color: #37404A;
+    text-decoration: none;
+    font-size: 48px;
+    margin: 5px 5px 5px 5px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #37404A;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+header nav {
+    margin: 7px 0;
+}
+
+  header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      padding: 10px 50px;
+      
+}
+  header nav ul li a {
+      padding: 10px 20px 0px 0px;
+      font-weight: lighter;
+      font-size: 1.25vw;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      color: rgb(154, 220, 221);
+      text-decoration: none;
+  }
+
+  .about-me, .work,.contact-me {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .about-me h2 {
+      color: #003d80;
+      border-right: 3px solid #003d80;
+  }
+
+  .work h2 {
+    color: #003d80;
+    border-right: 3px solid #003d80;
+}
+
+.contact-me h2 {
+    color: #003d80;
+    border-right: 3px solid #003d80;
+}
+
+  
+      
