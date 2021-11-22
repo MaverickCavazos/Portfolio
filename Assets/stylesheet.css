@@ -4,6 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #37404A;
+    font-family: Arial, Helvetica, sans-serif;
+
+} 
 header h1 {
     background-color: rgb(154, 220, 221);
     padding: 5px 5px 5px 75px;
@@ -15,14 +23,7 @@ header h1 a {
     font-size: 48px;
     margin: 5px 5px 5px 5px;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: #37404A;
-    font-family: Arial, Helvetica, sans-serif;
 
-} 
 header nav {
     margin: 7px 0;
 }
@@ -45,30 +46,273 @@ header nav {
       text-decoration: none;
   }
 
-  .Ocean {
-      display: flex;
+  .blue{
+      background-image: url(./images/cyan.jpg);
+      height: 400px;
       width: 100%;
+      
+  }
+  .blue h2 {
+      font-size: 38px;
+      color: rgb(154, 220, 221);
+      text-align: right;
+      position:  relative; top: 83%; right: 3%;
+
   }
 
-  .about-me, .work,.contact-me {
+  .about-me, .work, .contact-me {
       display: flex;
       flex-wrap: wrap;
+      flex-direction: row;
+
   }
 
   .about-me h2, .work h2, .contact-me h2 {
       color: #003d80;
       border-right: 3px solid #003d80;
-      padding: 20px;
+      padding: 0px 20px 20px 20px;
       font-size: 46px;
-      margin: 30px;
+      margin: 30px 0px;
+      line-height: 1;
       
   }
 
-  .about-me p {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0px 0px 0px 30px;
+  .ten {
+      width: 10%;
   }
 
+  .ninety  {
+    width: 90%; 
+    padding: 30px 15px 30px 15px; 
+    list-style: none;
+  }
 
+  .surf button  {
+      background: url(./images/Surf.jpg);
+      border: 3px solid rgb(51, 190, 224);
+      filter: hue-rotate(0deg);
+      border-radius: 6px;
+      width: 90%;
+      padding: 160px 0px 160px 0px;
+      margin: 0px 30px 20px 30px;
+      color: rgb(250, 137, 31);
+    font-weight: bold;
+    font-size: 120%;
       
+  }
+
+  .surf button:hover {
+      background: url(./images/Surf.jpg);
+      border: 3px solid rgb(51, 190, 224);
+      filter: hue-rotate(60deg);
+
+  }
+
+  .LED button  {
+    background: url(./images/LED.jpg);
+    border: 3px solid rgb(51, 190, 224);
+    filter: hue-rotate(0deg);
+    border-radius: 6px;
+    width: 44.6%;
+    padding: 50px 0px 50px 0px;
+    margin: 0px 8px 20px 30px;
+    float:left;
+    color: rgb(250, 137, 31);
+    font-weight: bold;
+    font-size: 120%;
+    
+    
+  
+}
+
+.LED button:hover {
+    background: url(./images/LED.jpg);
+    border: 3px solid rgb(51, 190, 224);
+    filter: hue-rotate(60deg);
+
+}
+
+.Calculator button  {
+    background: url(./images/calculator.jpg);
+    border: 3px solid rgb(51, 190, 224);
+    filter: hue-rotate(0deg);
+    border-radius: 6px;
+    width: 44.6%;
+    padding: 50px 0px 50px 0px;
+    margin: 0px 30px 20px 8px;
+    color: rgb(250, 137, 31);
+    font-weight: bold;
+    font-size: 120%;
+    
+
+}
+
+.Calculator button:hover {
+    background: url(./images/calculator.jpg);
+    border: 3px solid rgb(51, 190, 224);
+    filter: hue-rotate(60deg);
+
+}
+.Puzzel button  {
+    background: url(./images/puzzle.jpg);
+    border: 3px solid rgb(51, 190, 224);
+    filter: hue-rotate(0deg);
+    border-radius: 6px;
+    width: 44.6%;
+    padding: 50px 0px 50px 0px;
+    margin: 0px 8px 20px 30px;
+    float: left;
+    color: rgb(250, 137, 31);
+    font-weight: bold;
+    font-size: 120%;
+    
+  
+}
+
+.Puzzel button:hover {
+    background: url(./images/puzzle.jpg);
+    border: 3px solid rgb(51, 190, 224);
+    filter: hue-rotate(60deg);
+
+}
+
+.Run button  {
+    background: url(./images/Run-buddy.jpg);
+    border: 3px solid rgb(51, 190, 224);
+    filter: hue-rotate(0deg);
+    border-radius: 6px;
+    width: 44.6%;
+    padding: 50px 0px 50px 0px;
+    margin: 0px 30px 20px 8px;
+    color: rgb(250, 137, 31);
+    font-weight: bold;
+    font-size: 120%;
+    
+  
+}
+
+.Run button:hover {
+    background: url(./images/Run-buddy.jpg);
+    border: 3px solid rgb(51, 190, 224);
+    filter: hue-rotate(60deg);
+
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative; 
+    }
+
+    header h1 {
+        padding-right: 8%;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .blue {
+        width: 100%;
+    }
+
+    .blue h2 {
+        font-size: 170%;
+    }
+
+    .about-me h2, .work h2, .contact-me h2 {
+       font-size: 130%;
+       width: 10%;
+        
+    }
+}
+
+    @media screen and (max-width: 768px) {
+        header {
+            padding-bottom: 0;
+            justify-content: center;
+            position: relative; 
+        }
+    
+        header h1 {
+            padding-right: 8%;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+    
+        header nav ul {
+            margin-top: 20px;
+            width: 100%;
+            justify-content: center;
+        }
+    
+        header nav ul li a {
+            font-size: 20px;
+        }
+    
+        .blue {
+            width: 100%;
+        }
+    
+        .blue h2 {
+            font-size: 170%;
+        }
+    
+        .about-me h2, .work h2, .contact-me h2 {
+           font-size: 130%;
+           width: 15%;
+            
+        }
+
+        .ninety {
+            width: 85%;
+        }
+
+        .Calculator button  {
+            background: url(./images/calculator.jpg);
+            border: 3px solid rgb(51, 190, 224);
+            filter: hue-rotate(0deg);
+            border-radius: 6px;
+            width: 44.6%;
+            padding: 50px 0px 50px 0px;
+            margin: 0px 10px 20px 2px;
+            color: rgb(250, 137, 31);
+            font-weight: bold;
+            font-size: 120%;
+            
+        
+        }
+        
+        .Run button  {
+            background: url(./images/Run-buddy.jpg);
+            border: 3px solid rgb(51, 190, 224);
+            filter: hue-rotate(0deg);
+            border-radius: 6px;
+            width: 44.6%;
+            padding: 50px 0px 50px 0px;
+            margin: 0px 10px 20px 2px;
+            color: rgb(250, 137, 31);
+            font-weight: bold;
+            font-size: 120%;
+            
+          
+        }
+    }
+
+       
+
+    
+        
+      
+
