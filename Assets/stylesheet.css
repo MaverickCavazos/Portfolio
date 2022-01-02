@@ -154,7 +154,7 @@ header nav {
 
 }
 .Puzzel button  {
-    background: url(./images/puzzle.jpg);
+    background: url(./images/covidtracker.jpg);
     border: 3px solid rgb(51, 190, 224);
     filter: hue-rotate(0deg);
     border-radius: 6px;
@@ -170,7 +170,7 @@ header nav {
 }
 
 .Puzzel button:hover {
-    background: url(./images/puzzle.jpg);
+    background: url(./images/covidtracker.jpg);
     border: 3px solid rgb(51, 190, 224);
     filter: hue-rotate(60deg);
 
